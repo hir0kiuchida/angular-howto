@@ -14,8 +14,8 @@
 
 1. [プロジェクトについて](#プロジェクトについて)
 1. [環境](#環境)
-1. [ディレクトリ構成](#ディレクトリ構成)
 1. [開発環境構築](#開発環境構築)
+1. [ディレクトリ構成](#ディレクトリ構成)
 1. [トラブルシューティング](#トラブルシューティング)
 
 ## プロジェクトについて
@@ -35,6 +35,50 @@ Angular を使用する際に使用できるテンプレート
 | rxjs                 | 7.8.1      |
 
 その他のパッケージのバージョンは package.json を参照してください
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+## 開発環境構築
+
+### Angular CLI のインストール
+
+以下のコマンドで angular-cli をグローバルにインストールします。
+
+    npm install -g @angular/cli
+
+### リポジトリのインストール
+
+以下のコマンドで main ブランチをインストールします。
+
+    git clone https://github.com/hir0kiuchida/angular-howto.git
+
+このリポジトリはいくつかのモジュールで構成されております。
+
+    cd angular-howto
+    npm install
+
+### UI サーバーの起動
+
+フロントエンド部分の起動をさせます。
+
+    npm start
+
+ポート 4200 から起動確認ができます: [http://localhost:4200](http://localhost:4200)
+
+### バックエンドサーバーの起動
+
+サンプルデータを使用するため REST API バックエンドサーバーを起動させます。
+
+    npm run server
+
+これは小さな node REST API サーバーです。
+
+### コマンド一覧
+
+| コマンド                  | 実行する処理                |
+| ------------------------- | --------------------------- |
+| `npm install`             | node_modules のインストール |
+| `ng new <プロジェクト名>` | プロジェクトの作成          |
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
@@ -66,27 +110,6 @@ Angular を使用する際に使用できるテンプレート
 ```
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
-
-## 開発環境構築
-
-### プロジェクトの作成と起動
-
-`ng new <プロジェクト名>`
-
-### 動作確認
-
-Run `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-### サーバー
-
-test
-
-### コマンド一覧
-
-| コマンド                  | 実行する処理                |
-| ------------------------- | --------------------------- |
-| `npm install`             | node_modules のインストール |
-| `ng new <プロジェクト名>` | プロジェクトの作成          |
 
 ## トラブルシューティング
 
