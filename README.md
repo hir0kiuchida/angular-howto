@@ -88,18 +88,30 @@ Angular を使用する際に使用できるテンプレート
 .
 ├── src
 │   ├── app
+│   │   ├── core
+│   │   │    ├── guards
+│   │   │    ├── interceptors
+│   │   │    ├── models
+│   │   │    └── services
+│   │   ├── modules
+│   │   │    ├── home
+│   │   │    ├── ...
+│   │   │    └── ...
+│   │   ├── shared
+│   │   │    ├── components
+│   │   │    ├── directives
+│   │   │    └── pipes
 │   │   ├── app.component.html
 │   │   ├── app.component.scss
 │   │   ├── app.component.spec.ts
 │   │   ├── app.component.ts
-│   │   ├── app.component.ts
 │   │   ├── app.config.ts
-│   │   └──  app.routes.ts
+│   │   └── app.routes.ts
 │   ├── assets
+│   ├── environments
 │   ├── index.html
 │   ├── styles.scss
 │   └── main.ts
-├── .gitignore
 ├── angular.json
 ├── package-lock.json
 ├── package.json
