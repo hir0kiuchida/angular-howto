@@ -2,22 +2,12 @@
 
 ## 使用技術一覧
 
-![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white)
-![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-
-![Angular Badge](https://img.shields.io/badge/Angular-f5084c?logo=angular&logoColor=fff&style=flat)
-![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
-![NgRx Badge](https://img.shields.io/badge/NgRx-BA2BD2?logo=ngrx&logoColor=fff&style=flat)
-![NestJS Badge](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=fff&style=flat)
-![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)
-
 <p style="display: inline">
-  <img src="https://img.shields.io/badge/-Angular-DD0031.svg?logo=angular&style=plastic">
-  <img src="https://img.shields.io/badge/-Typescript-007ACC.svg?logo=typescript&style=plastic">
-  <img src="https://img.shields.io/badge/-Node.js-339933.svg?logo=node.js&style=plastic">
+  <img alt="angular" src="https://img.shields.io/badge/Angular-f5084c?logo=angular&logoColor=fff&style=flat">
+  <img alt="typescript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat">
+  <img alt="ngrx" src="https://img.shields.io/badge/NgRx-BA2BD2?logo=ngrx&logoColor=fff&style=flat">
+  <img alt="nestjs" src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=fff&style=flat">
+  <img alt="nodejs" src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat">
 </p>
 
 ## 目次
