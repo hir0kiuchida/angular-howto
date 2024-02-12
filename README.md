@@ -1,27 +1,111 @@
-# AngularHowto
+<div id="top"></div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## 使用技術一覧
 
-## Development server
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Angular Badge](https://img.shields.io/badge/Angular-f5084c?logo=angular&logoColor=fff&style=flat)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+![NgRx Badge](https://img.shields.io/badge/NgRx-BA2BD2?logo=ngrx&logoColor=fff&style=flat)
+![NestJS Badge](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=fff&style=flat)
+![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)
 
-## Code scaffolding
+<p style="display: inline">
+  <img src="https://img.shields.io/badge/-Angular-DD0031.svg?logo=angular&style=plastic">
+  <img src="https://img.shields.io/badge/-Typescript-007ACC.svg?logo=typescript&style=plastic">
+  <img src="https://img.shields.io/badge/-Node.js-339933.svg?logo=node.js&style=plastic">
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 目次
 
-## Build
+1. [プロジェクトについて](#プロジェクトについて)
+1. [環境](#環境)
+1. [ディレクトリ構成](#ディレクトリ構成)
+1. [開発環境構築](#開発環境構築)
+1. [トラブルシューティング](#トラブルシューティング)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## プロジェクトについて
 
-## Running unit tests
+Angular を使用する際に使用できるテンプレート
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="right">(<a href="#top">トップへ</a>)</p>
 
-## Running end-to-end tests
+## 環境
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+| 言語・フレームワーク | バージョン |
+| -------------------- | ---------- |
+| Angular              | 17.1.3     |
+| Node.js              | 20.10.0    |
+| npm                  | 10.2.4     |
+| typescript           | 5.2.2      |
+| rxjs                 | 7.8.1      |
 
-## Further help
+その他のパッケージのバージョンは package.json を参照してください
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+## ディレクトリ構成
+
+```
+.
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.component.ts
+│   │   ├── app.config.ts
+│   │   └──  app.routes.ts
+│   ├── assets
+│   ├── index.html
+│   ├── styles.scss
+│   └── main.ts
+├── .gitignore
+├── angular.json
+├── package-lock.json
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+└── README.md
+```
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
+
+## 開発環境構築
+
+### プロジェクトの作成と起動
+
+`ng new <プロジェクト名>`
+
+### 動作確認
+
+Run `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### サーバー
+
+test
+
+### コマンド一覧
+
+| コマンド                  | 実行する処理                |
+| ------------------------- | --------------------------- |
+| `npm install`             | node_modules のインストール |
+| `ng new <プロジェクト名>` | プロジェクトの作成          |
+
+## トラブルシューティング
+
+### Error Code
+
+How to
+
+### Error Code
+
+How to
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
