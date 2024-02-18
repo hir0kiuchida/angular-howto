@@ -20,27 +20,17 @@
       <li>app.routes.ts</li>
       <li>app.component.html</li>
     </ul>
-    <h3>コードの説明</h3>
-    <ul>
-      <li>app.config.ts</li>
-      AngularCLIでプロジェクトを作成した際に以下はデフォルトで作成される
-      <code>providers: [provideRouter(routes)]</code>
-      <span>パターン2</span
-      >の場合は withComponentInputBinding()を追加する。
-      <code>provideRouter(routes, withComponentInputBinding())</code>
-      <strong>以下は今は調べてない</strong>
-      <code>provideAnimationsAsync()</code>
-      <li>app.routes.ts</li>
-      Routerの順番は大事。上から順番にマッチしたpathを選択します。
-      <li>app.component.html</li>
-      <code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code>
-      app.route.tsのRoutesのコンポーネントがここに出たり消えたりします。
-    </ul>
   </div>
   <!-- Test -->
   <h2>Test</h2>
   <div class="block">
     <h3>パターン1</h3>
+    <!-- 
+      属性の説明
+      - routerLink: app.routes.ts のRoutesに指定したURLのpath。ナビゲーション先。
+      - routerLinkActive: active時にclassを付与する。
+      - ariaCurrentWhenActive: aria-currentと等しいです。
+    -->
     <a
       class="button"
       routerLink="/first"
@@ -58,33 +48,33 @@
     >
       Second
     </a>
-    <pre>
-      属性の説明
-      - routerLink: app.routes.ts のRoutesに指定したURLのpath。ナビゲーション先。
-      - routerLinkActive: &lt;a&gt; がactive時にclassを付与する。
-      - ariaCurrentWhenActive: aria-currentと等しいです。
-    </pre>
   </div>
   <div class="block">
     <h3>パターン2</h3>
+    <!--
+      ['user-profile', 123]は URLが/user-profile/123
+      クエリパラメータを取得する
+    -->
     <a
       class="button"
-      routerLink="/helloworld"
+      [routerLink]="['user-profile', 123]"
       routerLinkActive="activebutton"
       ariaCurrentWhenActive="page"
     >
-      routerLinkを取得
+      URLから値取得
     </a>
-    <pre>
-      静的なRoute、パラメータを持つ可変Route、ワイルドカードルートRouteなど
-      URLがより複雑な場合には独自のパターンマッチングを構築することもできます。
-      app.routes.ts の matcher によってURLを取得している。
-    </pre>
   </div>
 
   <div class="block">
-    <h3>結果</h3>
-    <!-- ルーティングされたコンポーネントがここに出る -->
-    <router-outlet></router-outlet>
+    <h3>パターン3</h3>
+    route guardに関して ...
+  </div>
+  <!-- 結果 -->
+  <div class="block">
+    <h3>出力コンポーネント</h3>
+    <div class="result">
+      <!-- ルーティングされたコンポーネントがここに出る -->
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

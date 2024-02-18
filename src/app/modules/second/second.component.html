@@ -1,2 +1,16 @@
-<h3>HEROES</h3>
-<p>Get your heroes here</p>
+<h3>SECOND</h3>
+<nav>
+  <ul>
+    <li><a routerLink="child-a">Child A</a></li>
+    <li><a routerLink="child-b">Child B</a></li>
+  </ul>
+  <ul>
+    <!-- 相対パス -->
+    <li><a routerLink="../first">First Component(相対パス)</a></li>
+    <!-- router.navigate -->
+    <li><button (click)="goToFirst()">goToFirst</button></li>
+    <li><button (click)="goToChildB()">goToChildB</button></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
