@@ -16,7 +16,7 @@ export class SecondComponent {
 
   /** FirstComponentへナビゲート */
   goToFirst() {
-    this.router.navigate(["first"]);
+    this.router.navigate(["home/first"]);
   }
 
   /**

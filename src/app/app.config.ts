@@ -13,5 +13,8 @@ import { routes } from "./app.routes";
  */
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withComponentInputBinding()), provideAnimationsAsync()],
+  providers: [
+    provideRouter(routes, withComponentInputBinding()),
+    provideAnimationsAsync(),
+  ],
 };

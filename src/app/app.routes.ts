@@ -13,30 +13,43 @@ import { PageNotFoundComponent } from "./shared/components/page-not-found/page-n
  */
 
 export const routes: Routes = [
-  // 空のパス localhost:4200/の時はlocalhost:4200/firstへリダイレクト
-  { path: "", redirectTo: "/first", pathMatch: "full" },
-  // パターン1
-  // localhost:4200/first
+  // 空のパス localhost:4200/の時はlocalhost:4200/homeへリダイレクト
+  { path: "", redirectTo: "/home", pathMatch: "full" },
+  // localhost:4200/home
   {
-    path: "first",
-    title: "First component",
-    component: FirstComponent,
+    path: "home",
+    component: HomeComponent,
+    children: [
+      // パターン1
+      // localhost:4200/home/first
+      {
+        path: "first",
+        title: "First component",
+        component: FirstComponent,
+      },
+      {
+        path: "second",
+        // LazyLoading
+        loadChildren: () => import("./modules/second/second.routes"),
+      },
+      // パターン2
+      {
+        path: "user-profile/:userId",
+        // LazyLoading
+        loadComponent: () =>
+          import("./modules/profile/profile.component").then(
+            (mod) => mod.ProfileComponent
+          ),
+        data: {
+          profile: true,
+        },
+      },
+    ],
   },
   {
-    path: "second",
-    // LazyLoading
-    loadChildren: () => import("./modules/second/second.routes"),
+    path: "rxjs",
+    title: "Rxjs component",
+    loadChildren: () => import("./shared/components/rxjs/rxjs.routes"),
   },
-  // パターン2
-  {
-    path: "user-profile/:userId",
-    // LazyLoading
-    loadComponent: () =>
-      import("./modules/profile/profile.component").then((mod) => mod.ProfileComponent),
-    data: {
-      profile: true,
-    },
-  },
-  { path: "home", title: "Home component", component: HomeComponent },
   { path: "**", title: "Not Found 404", component: PageNotFoundComponent },
 ];

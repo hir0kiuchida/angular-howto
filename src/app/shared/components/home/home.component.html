@@ -1,50 +1,86 @@
-<mat-sidenav-container fullscreen>
-  <mat-sidenav #start (click)="start.close()">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/">
-        <mat-icon>library_books</mat-icon>
-        <span>Courses</span>
-      </a>
+<div class="contents">
+  <h1>Angular Template集</h1>
+  <div class="block">
+    <pre>
+      Angular で使用できるテンプレートを提供する。
+      はじめにこのページではRoutingの使用例を載せていますが
+      遷移先に他テストページがあります。
+    </pre>
+  </div>
+  <!-- Routing の実装方法 -->
+  <h2>Routing の実装方法</h2>
+  <div class="block">
+    <pre>
+      SPAでは、サーバーにアクセスして新しいページを取得するのではなく
+      特定のコンポーネントに対応した画面の一部を出したり消したりして、ユーザーへの表示を切り替えます。
+    </pre>
+    <h3>登場人物</h3>
+    <ul>
+      <li>app.config.ts</li>
+      <li>app.routes.ts</li>
+      <li>app.component.html</li>
+    </ul>
+  </div>
+  <!-- Test -->
+  <h2>Test</h2>
+  <div class="block">
+    <h3>パターン1</h3>
+    <!-- 
+      属性の説明
+      - routerLink: app.routes.ts のRoutesに指定したURLのpath。ナビゲーション先。
+      - routerLinkActive: active時にclassを付与する。
+      - ariaCurrentWhenActive: aria-currentと等しいです。
+    -->
+    <a
+      class="button"
+      routerLink="first"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      First
+    </a>
+    |
+    <a
+      class="button"
+      routerLink="second"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      Second
+    </a>
+  </div>
+  <div class="block">
+    <h3>パターン2</h3>
+    <!--
+      ['user-profile', 123]は URLが/user-profile/123
+      クエリパラメータを取得する
+    -->
+    <a
+      class="button"
+      [routerLink]="['user-profile', 123]"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      URLから値取得
+    </a>
+  </div>
 
-      <a mat-list-item routerLink="/search-lessons">
-        <mat-icon>search</mat-icon>
-        <span>Search Lessons</span>
-      </a>
-
-      <a mat-list-item routerLink="about">
-        <mat-icon>question_answer</mat-icon>
-        <span>About</span>
-      </a>
-      <a mat-list-item>
-        <mat-icon>person_add</mat-icon>
-        <span>Register</span>
-      </a>
-
-      <a mat-list-item routerLink="login" *ngIf="auth.isLoggedOut$ | async">
-        <mat-icon>account_circle</mat-icon>
-        <span>Login</span>
-      </a>
-
-      <a mat-list-item *ngIf="auth.isLoggedIn$ | async">
-        <mat-icon>exit_to_app</mat-icon>
-        <span>Logout</span>
-      </a>
-    </mat-nav-list>
-  </mat-sidenav>
-
-  <mat-toolbar color="primary">
-    <div class="toolbar-tools">
-      <button mat-icon-button (click)="start.open('mouse')">
-        <mat-icon>menu</mat-icon>
-      </button>
-
-      <div class="filler"></div>
+  <div class="block">
+    <h3>パターン3</h3>
+    route guardに関して ...
+  </div>
+  <!-- 結果 -->
+  <div class="block">
+    <h3>出力コンポーネント</h3>
+    <div class="result">
+      <!-- ルーティングされたコンポーネントがここに出る -->
+      <router-outlet></router-outlet>
     </div>
-  </mat-toolbar>
+  </div>
 
-  <!-- <messages></messages> -->
-
-  <!-- <loading></loading> -->
-  aaa
-  <!-- <router-outlet></router-outlet> -->
-</mat-sidenav-container>
+  <h2>テストページへ</h2>
+  <div class="block">
+    工事中...
+    <a class="button" routerLink="../rxjs"> Rxjs </a>
+  </div>
+</div>
