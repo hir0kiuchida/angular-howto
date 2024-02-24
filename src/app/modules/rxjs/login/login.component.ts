@@ -9,7 +9,7 @@ import { MatCard, MatCardContent, MatCardTitle } from "@angular/material/card";
 import { MatFormField } from "@angular/material/form-field";
 import { Router } from "@angular/router";
 
-import { AuthStore } from "../../core/services/auth.store";
+import { AuthStore } from "../../../core/services/rxjs/auth.store";
 
 @Component({
   selector: "app-login",

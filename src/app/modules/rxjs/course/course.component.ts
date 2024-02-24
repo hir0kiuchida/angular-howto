@@ -4,9 +4,9 @@ import { ActivatedRoute } from "@angular/router";
 import { combineLatest, Observable } from "rxjs";
 import { map, startWith, tap } from "rxjs/operators";
 
-import { Course } from "../../core/models/course";
-import { Lesson } from "../../core/models/lesson";
-import { CoursesService } from "../../core/services/courses.service";
+import { Course } from "../../../core/models/rxjs/course";
+import { Lesson } from "../../../core/models/rxjs/lesson";
+import { CoursesService } from "../../../core/services/rxjs/courses.service";
 
 interface CourseData {
   course: Course;

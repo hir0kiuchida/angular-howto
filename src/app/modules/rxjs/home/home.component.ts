@@ -3,8 +3,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
 import { MatTab, MatTabGroup } from "@angular/material/tabs";
 import { Observable } from "rxjs";
 
-import { Course } from "../../core/models/course";
-import { CoursesStore } from "../../core/services/courses.store";
+import { Course } from "../../../core/models/rxjs/course";
+import { CoursesStore } from "../../../core/services/rxjs/courses.store";
 import { CoursesCardListComponent } from "../courses-card-list/courses-card-list.component";
 
 @Component({

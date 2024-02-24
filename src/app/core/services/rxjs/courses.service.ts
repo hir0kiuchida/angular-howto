@@ -3,8 +3,8 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { map, shareReplay } from "rxjs/operators";
 
-import { Course } from "../models/course";
-import { Lesson } from "../models/lesson";
+import { Course } from "../../models/rxjs/course";
+import { Lesson } from "../../models/rxjs/lesson";
 
 @Injectable({
   providedIn: "root",

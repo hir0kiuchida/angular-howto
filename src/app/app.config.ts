@@ -5,7 +5,6 @@ import { provideRouter, withComponentInputBinding } from "@angular/router";
 import { routes } from "./app.routes";
 
 /**
- * memo
  * AngularCLIでプロジェクトを作成した際にデフォルトで作成される
  * providers: [provideRouter(routes)]
  * withComponentInputBinding()

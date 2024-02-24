@@ -3,9 +3,9 @@ import { Injectable } from "@angular/core";
 import { BehaviorSubject, Observable, throwError } from "rxjs";
 import { catchError, map, shareReplay, tap } from "rxjs/operators";
 
-import { LoadingService } from "../../modules/loading/loading.service";
-import { MessagesService } from "../../modules/messages/messages.service";
-import { Course, sortCoursesBySeqNo } from "../models/course";
+import { LoadingService } from "../../../modules/rxjs/loading/loading.service";
+import { MessagesService } from "../../../modules/rxjs/messages/messages.service";
+import { Course, sortCoursesBySeqNo } from "../../models/rxjs/course";
 
 @Injectable({
   providedIn: "root",

@@ -16,7 +16,11 @@ export default [
     component: SecondComponent,
     children: [
       { path: "child-a", component: SecondChildAComponent },
-      { path: "child-b", title: "Second-Child-B component", component: SecondChildBComponent },
+      {
+        path: "child-b",
+        title: "Second-Child-B component",
+        component: SecondChildBComponent,
+      },
     ],
     // providers[]を作成してServiceなどを追加すればそのコンポーネントだけに提供するものを指定することができる
     // 例えばAdminServiceを必要としてるのがadminComponentだけな時

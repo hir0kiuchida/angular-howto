@@ -19,9 +19,9 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { RouterOutlet } from "@angular/router";
 
-import { AuthStore } from "../../../core/services/auth.store";
-import { LoadingComponent } from "../../../modules/loading/loading.component";
-import { MessagesComponent } from "../../../modules/messages/messages.component";
+import { AuthStore } from "../../core/services/rxjs/auth.store";
+import { LoadingComponent } from "./loading/loading.component";
+import { MessagesComponent } from "./messages/messages.component";
 
 @Component({
   selector: "app-rxjs",

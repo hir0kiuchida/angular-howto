@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 
-import { FirstComponent } from "./modules/first/first.component";
+import { FirstComponent } from "./modules/routing/first/first.component";
 import { HomeComponent } from "./shared/components/home/home.component";
 import { PageNotFoundComponent } from "./shared/components/page-not-found/page-not-found.component";
 
@@ -30,14 +30,14 @@ export const routes: Routes = [
       {
         path: "second",
         // LazyLoading
-        loadChildren: () => import("./modules/second/second.routes"),
+        loadChildren: () => import("./modules/routing/second/second.routes"),
       },
       // パターン2
       {
         path: "user-profile/:userId",
         // LazyLoading
         loadComponent: () =>
-          import("./modules/profile/profile.component").then(
+          import("./modules/routing/profile/profile.component").then(
             (mod) => mod.ProfileComponent
           ),
         data: {
@@ -49,7 +49,7 @@ export const routes: Routes = [
   {
     path: "rxjs",
     title: "Rxjs component",
-    loadChildren: () => import("./shared/components/rxjs/rxjs.routes"),
+    loadChildren: () => import("./modules/rxjs/rxjs.routes"),
   },
   { path: "**", title: "Not Found 404", component: PageNotFoundComponent },
 ];

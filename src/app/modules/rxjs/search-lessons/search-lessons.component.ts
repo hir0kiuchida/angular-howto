@@ -4,8 +4,8 @@ import { MatFormField } from "@angular/material/form-field";
 import { MatIcon } from "@angular/material/icon";
 import { Observable } from "rxjs";
 
-import { Lesson } from "../../core/models/lesson";
-import { CoursesService } from "../../core/services/courses.service";
+import { Lesson } from "../../../core/models/rxjs/lesson";
+import { CoursesService } from "../../../core/services/rxjs/courses.service";
 import { LessonComponent } from "../lesson/lesson.component";
 
 @Component({

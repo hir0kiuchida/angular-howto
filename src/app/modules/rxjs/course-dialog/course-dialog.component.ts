@@ -19,8 +19,8 @@ import {
 import { MatFormField } from "@angular/material/form-field";
 import { MatOption, MatSelect } from "@angular/material/select";
 
-import { Course } from "../../core/models/course";
-import { CoursesStore } from "../../core/services/courses.store";
+import { Course } from "../../../core/models/rxjs/course";
+import { CoursesStore } from "../../../core/services/rxjs/courses.store";
 import { LoadingComponent } from "../loading/loading.component";
 import { LoadingService } from "../loading/loading.service";
 import { MessagesComponent } from "../messages/messages.component";

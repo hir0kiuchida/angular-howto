@@ -1,8 +1,8 @@
-import { AboutComponent } from "../../../modules/about/about.component";
-import { CourseComponent } from "../../../modules/course/course.component";
-import { LoginComponent } from "../../../modules/login/login.component";
-import { SearchLessonsComponent } from "../../../modules/search-lessons/search-lessons.component";
+import { AboutComponent } from "./about/about.component";
+import { CourseComponent } from "./course/course.component";
+import { LoginComponent } from "./login/login.component";
 import { RxjsComponent } from "./rxjs.component";
+import { SearchLessonsComponent } from "./search-lessons/search-lessons.component";
 
 export default [
   {

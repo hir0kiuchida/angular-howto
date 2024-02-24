@@ -1,8 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { Component, Input } from "@angular/core";
 
-import { Lesson } from "../../core/models/lesson";
-import { SafeUrlPipe } from "../../shared/pipes/safe-url.pipe";
+import { Lesson } from "../../../core/models/rxjs/lesson";
+import { SafeUrlPipe } from "../../../shared/pipes/safe-url.pipe";
 
 @Component({
   selector: "app-lesson",

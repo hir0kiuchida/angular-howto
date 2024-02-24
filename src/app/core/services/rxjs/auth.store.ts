@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { BehaviorSubject, Observable } from "rxjs";
 import { map, shareReplay, tap } from "rxjs/operators";
 
-import { User } from "../models/user";
+import { User } from "../../models/rxjs/user";
 
 const AUTH_DATA = "auth_data";
 

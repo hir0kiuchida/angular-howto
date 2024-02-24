@@ -16,7 +16,7 @@ import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { RouterLink } from "@angular/router";
 import { filter, tap } from "rxjs/operators";
 
-import { Course } from "../../core/models/course";
+import { Course } from "../../../core/models/rxjs/course";
 import { CourseDialogComponent } from "../course-dialog/course-dialog.component";
 
 @Component({
